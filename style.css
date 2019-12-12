@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20em 1fr 20em;
+    grid-template-rows: 5em 1fr 5em;
+    grid-template-areas: 
+    "header header header"
+    "side main rightside"
+    "footer footer footer";
+    
+}
+header{
+    grid-area: header;
+    height: 5em;
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+header > span{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.sideoptions{
+    grid-area: side;
+}
+.rightside{
+    grid-area: rightside;
+}
+.wrapper{
+    
+    grid-area: main;
+    margin: 0 auto;
+}
+.headerdiv{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.table {
+    
+    display:table
+}
+.tr {display: table-row}
+.thead {display: table-header-group}
+.tbody {display: table-row-group}
+.td {
+    display: table-cell;
+    
+    width: 20em;
+    
+}
+.thead .tr .td{
+    
+    font-weight: bold;
+}
+
+.tbody .tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.inputgrid{
+    display: flex;
+    
+}
+.inputgrid > div{
+    
+    float: left;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    height: 5em;
+    color: white;
+}

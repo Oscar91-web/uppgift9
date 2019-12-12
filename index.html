@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='hack.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        Boogie<span>bookbook</span>
+    </header>
+    <div class="sideoptions">
+        <div class="Addbooks">
+                <div class="headerdiv">Add books to your collection</div>
+                <div class="inputgrid">
+                    <div>
+                        Author:<br>
+                        Title:<br>
+                    </div>
+                    <div>
+                        <input id ="author" type="text" name="author"><br>
+                        <input id ="title" type="text" name="title"><br>
+                    </div>
+                    
+                </div>
+                <button id="submit_book">Submit</button>
+                <button id="showstuff">Refresh</button>
+                <button id="requestkey">Request key</button>
+                
+            </div>
+            <input id="status" type="text" readonly="readonly">
+    </div>
+    <div class="wrapper">
+   
+   
+       
+        <div class="table">
+                <div class="thead">
+                    <div class="tr">
+                        <div class="td">
+                            Author
+                        </div>
+                        <div class="td">
+                            Title
+                        </div>
+                    </div>
+                </div>
+                <div class="tbody" id="books">
+                    
+            </div>
+                
+        </div>
+    </div>
+    <div class="footer">
+            hello my name is footer
+        </div> 
+</body>
+</html>
